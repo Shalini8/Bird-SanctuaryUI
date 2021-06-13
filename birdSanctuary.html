@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="birdSanctuary.css">
+    <title>BirdSanctuary</title>
+</head>
+
+<body>
+
+    <form action="" onsubmit="handleOnSubmit()">
+        <div>
+            <label for="text">BIRD NAME: </label>
+            <input type="text" name="text" id="text" placeholder="Enter bird name" required>
+            <error-output class="text-error" for="text"></error-output>
+        </div>
+        <div>
+            <label for="text">BIRD ID: </label>
+            <select class="select" id="type" required>
+                <option value="" disabled selected>enter id:</option>
+                <option>01</option>
+                <option>02</option>
+                <option>03</option>
+                <option>04</option>
+                <option>05</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="text">BIRD COLOUR</label>
+            <select class="select" required>
+                <option value="" disabled selected> enter colour of bird :</option>
+                <option >Blue</option>
+                <option >White</option>
+                <option >Green</option>
+                <option >Black</option>
+                <option >Pink</option>
+            </select>
+        </div>
+        <div>
+            <input type="checkbox">
+            <label>Flyable</label>
+            <input type="checkbox">
+            <label>Not Flyable</label>
+            <input type="checkbox">
+            <label>Swimmable</label>
+            <input type="checkbox">
+            <label>Non Swimmable</label>
+        </div>
+
+        <div>
+            <button type="Submit">
+                submit
+            </button>
+        </div>
+        <script>
+            function handleOnSubmit() {
+                alert("Thanks! " + text.value + " , is entered successfully")
+            }
+        </script>
+    </form>
